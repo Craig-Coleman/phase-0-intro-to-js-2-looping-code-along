@@ -1,29 +1,16 @@
 
-const names = ["Conor", "JL", "Alicia"];
-
-const event1 = "birthday";
-
 function writeCards(names, event1) {
     
-    const namesCopy = [...names];
+    let namesCopy = [];
 
-    for (let i = 0; i < namesCopy.length; i++) {
-        console.log(`Hello ${namesCopy[i]}, thank you so much for the ${event1}, gift!`)
+    for (let i = 0; i < names.length; i++) {
+        namesCopy.push(`Thank you, ${names[i]}, for the wonderful ${event1} gift!`);
     }
-
     return namesCopy;
 }
 
-writeCards(names, event1);
-
-
-
-let number = 10
-
-function countDown(number) {
-    while (number >= 0) {
-        console.log(number--);
+function countDown(integer){
+    while (integer >= 0) {
+        console.log(integer--);
     }
 }
-
-countDown(number);
